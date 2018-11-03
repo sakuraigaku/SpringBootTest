@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+<style>
+body {
+	font-size: 41;
+	color: #666;
+}
+
+h1 {
+	font-size: 70pt;
+	color: #aaa;
+	margin: -15px 0px
+}
+</style>
+</head>
+
+<body>
+	<h1>Sample</h1>
+	<p>this is sample.</p>
+	<hr>
+	<ul th:each="obj : ${list}">
+	<li th:text="${obj}"></li>
+	</ul>
+</body>
+</html>
